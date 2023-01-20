@@ -1,0 +1,111 @@
+html {
+  width: 100%;
+  position: relative;
+  font-family: 'SF UI Text', 'Helvetica Neue', 'Segoe UI', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Open Sans', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  position: relative;
+  font-size: 1.5rem;
+  transition: all 0.4s ease-in-out;
+}
+ul {
+  font-size: 1.15em;
+}
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+main {
+  flex-grow: 1;
+  margin-top: 3rem;
+}
+.inner-content {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  margin-top: 2.78em;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+}
+
+main .container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  transition: all 1.5s linear;
+  box-shadow: -1px 3px 14px 11px #000;
+}
+.page-inner {
+  display: flex;
+  margin: 5rem;
+  justify-content: space-between;
+}
+@media (max-width: 1100px) {
+  .page-inner {
+    flex-direction: column;
+    margin: 0rem;
+  }
+  .page-inner > div {
+    margin: 2rem 0.5rem;
+  }
+}
+.page-inner > div {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.page-inner div div {
+  margin-bottom: 25px;
+}
+.translate:hover {
+  transform: translate(10%, 80%);
+}
+.scale:hover {
+  transform: scale(0.5, 0.5);
+}
+.rotate:hover {
+  transform: rotate(360deg);
+}
+.skew:hover {
+  transform: skew(45deg, 45deg);
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg) scale(0%);
+  }
+  25% {
+    transform: rotate(180deg) scale(50%, 50%);
+  }
+  50% {
+    transform: rotate(360deg) scale(100%, 100%);
+  }
+  75% {
+    transform: rotate(-180deg) scale(-50%, -50%);
+  }
+  to {
+    transform: rotate(0deg) scale(0%);
+  }
+}
+.rotate-animation {
+  animation: rotation 3s infinite linear;
+}

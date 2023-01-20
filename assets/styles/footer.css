@@ -1,0 +1,37 @@
+.footer-main {
+  opacity: 1;
+  margin-bottom: 7.4em;
+  width: 100%;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .footer-main {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+footer a {
+  display: block;
+}
+footer a:hover {
+  color: #399ce8;
+  text-shadow: 1px 2px 1px #000;
+  transform: translate(10px, 0);
+}
+
+.say-hello {
+  text-transform: uppercase;
+}
+.footer-main > ul {
+  line-height: 2.5;
+  font-size: 1.15em;
+  margin-top: 1.05em;
+}
+.footer-main li {
+  line-height: 2.5;
+}
+@media (min-width: 461px) {
+  .basic-contact {
+    margin-right: 18vw;
+  }
+}
